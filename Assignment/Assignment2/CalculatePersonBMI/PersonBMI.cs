@@ -1,8 +1,5 @@
 class PersonBMI
 {
-    public string name;
-    public double height;
-    public double weight;
 
     public PersonBMI(string n, double h, double w)
     {
@@ -10,6 +7,9 @@ class PersonBMI
         height = h;
         weight = w;
     }
+    public string name;
+    public double height;
+    public double weight;
    
     double CalculateBMI(double height, double weight)
     {
