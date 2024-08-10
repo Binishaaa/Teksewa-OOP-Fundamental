@@ -12,6 +12,7 @@
 // string userName = Console.ReadLine();
 // Console.WriteLine($"your name is {userName.ToUpper()}");
 
+//Class::
 
 //Person class::
 // Person binisha = new(); //created object(Binisha) of class Person (instance of class Person)
@@ -61,12 +62,23 @@ Console.WriteLine(x);
 var y = binisha.GetNameInitials();
 Console.WriteLine(y);
 
-Console.WriteLine(binisha.CapitalizeName());
+// Console.WriteLine(binisha.CapitalizeName());
 
 var Output = Student.GetDetails(y,x); // here object(binisha.GetDetails) is not necessary since used they are not object members
 Console.WriteLine(Output);
 
 // var Output = Student.GetDetails(age:x, initial :y); //named parameter
 // Console.WriteLine(Output); 
+
+// Student binisha = new("Binisha P Awale", new DateTime(1998,04,13),"NCIT", "Computer Engineering");
+// (string AgeString, int AgeDays) = binisha.CalculateAge();
+// var y = binisha.GetNameInitials();
+
+
+// var Output = Student.GetDetails(age: AgeString, initial:y);
+// var Output1 = Student.GetDetails(age : AgeString, initial:y, ageDay: AgeDays);
+// Console.WriteLine(Output);
+// Console.WriteLine(Output1);
+
 
 

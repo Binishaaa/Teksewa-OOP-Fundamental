@@ -15,6 +15,17 @@ class Student(string name, DateTime dob, string college, string program) //param
      return $"{year} Years and {months} Months";
     }
 
+
+// using tuple : return multiple value
+//to print age in yrs and months(string) and days(int)
+    // public (string,int) CalculateAge() 
+    // {
+    //  var ageSpan = DateTime.Now - dob;   
+    //  var year = ageSpan.Days / 365;
+    //  var months = ageSpan.Days % 365 / 30; //% modulo- gives remainder
+    //  return ($"{year} Years and {months} Months",ageSpan.Days);
+    // }
+
     //Get initials of a student e.g. Bishnu Singh Rawal => BR
 
     public string GetNameInitials()  
@@ -32,12 +43,24 @@ class Student(string name, DateTime dob, string college, string program) //param
     }
     // public string CapitalizeName() => name.ToUpper(); using arrow function :: used for one line method
 
+
     //print details of a student. Output format : BR is 22 Years and 2 Months old.
 
-    public static string GetDetails(string initial, string age) =>  // initial and age are not instance member they are paramter so static can be used in this case
-    $"{initial} is {age} old";
-}
- 
+    // public static string GetDetails(string initial, string age) =>  // initial and age are not instance member they are paramter so static can be used in this case
+    // $"{initial} is {age} old";
 
+// to print age and age in Days(ageDay)
+    // public static string GetDetails(string initial, string age, int ageDay=0) => 
+    // $"{initial} is {age} old.In-days he/she is {ageDay}"; 
+
+     //using ternary operator
+    public static string GetDetails(string initial, string age, int ageDay=0) => 
+    $"{initial} is {age} old.{((ageDay == 0) ? "" : $"In-days he/she is {ageDay}")} "; 
+
+
+//method overload
+    //  public static string GetDetails(string details) =>  
+    // $"Student Details:{details}";
+}
 
     
