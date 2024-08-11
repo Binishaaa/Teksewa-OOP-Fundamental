@@ -1,6 +1,5 @@
 public class HomePage : IDriver
 {
-    // Properties
     public string[] MenuItems { get; set; }
     public int Height{ get; set; }
     public int Width{ get; set; }
