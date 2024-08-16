@@ -1,8 +1,14 @@
-﻿var fileHandler = new FileHandler();
-fileHandler.ReadFile();
+﻿// var fileHandler = new FileHandler();
+// fileHandler.ReadFile();
 
-fileHandler.WriteFile();
+// fileHandler.WriteFile();
 
-var emps = fileHandler.ReadFile();
+// var emps = fileHandler.ReadFile();
 
-fileHandler.WriteEmployeeToFile(emps);
+// fileHandler.WriteEmployeeToFile(emps);
+
+//Day2-folderhandler class
+
+FolderHandler.CreateFolder("Reports");
+FolderHandler.CreateFolder("Teksewa");
+FolderHandler.CreateFolder("Teksewa1",@"D:\");

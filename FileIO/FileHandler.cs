@@ -51,4 +51,16 @@ internal class FileHandler
         var employeesCollection = employees.Select(Person.ReturnNameandDobDetails); // function inside function
         File.WriteAllLines(filePath, employeesCollection);
     }
+
+    //get file info
+    public void GetFileInfo()
+    {
+        string filePath = @"D:\Training\Teksewa-OOP-Fundamental\FileIO\Files\Employees.txt";
+        FileInfo fileInfo = new FileInfo(filePath);
+        Console.WriteLine(fileInfo.FullName);
+        Console.WriteLine(fileInfo.CreationTime);
+        Console.WriteLine(fileInfo.LastAccessTime);
+        Console.WriteLine($"{fileInfo.Length / 1024: F2} KB");
+        Console.WriteLine(fileInfo);
+    }
 }
